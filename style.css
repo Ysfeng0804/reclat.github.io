@@ -52,7 +52,6 @@ nav {
     padding: 0.5rem 0;
 }
 
-
 /* 默认隐藏折叠导航图标 */
 #nav-icon {
     display: none;
@@ -187,9 +186,12 @@ footer {
         display: inline-block;
         position: absolute;
         top: 20px;
-        left: 0;
+        left: 10px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
         padding: 1rem;
+        top: 10px;
     }
     
     .nav-icon div {
@@ -201,6 +203,11 @@ footer {
     
     .nav-icon.active nav {
         max-height: 250px; // Expand the navigation
+    }
+
+    #nav-icon img {
+        width: 100%;
+        height: auto;
     }
 
     .gallery {
