@@ -32,6 +32,11 @@ h2, h3 {
     margin-bottom: 20px;
 }
 
+h5{
+    font-size: 18px;
+}
+
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -170,9 +175,156 @@ ol{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* button group to do */
+/*
+ga-bottom
+fa
+*/
+
+#footerwrapper {
+    background-image:url('images/lynx_landing.png'), url('images/background_in_space.gif');
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, center center /*left top*/;
+  }
+  #spacemyfooter {
+    padding:40px 80px 300px 80px;
+    max-width:1400px;
+    xmargin:auto;
+  }
+
+.ga-bottom{
+    -webkit-text-size-adjust: 100%;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    box-sizing: inherit;
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footerlinks_1 {
+    width:auto;
+    float:left;
+    padding:40px;
+    color:#FFF4A3;
+    font-family: Source Sans Pro, sans-serif;
+  }
+  .footerlinks_1 .fa-logo {
+    font-size:46px!important;
+    color:#ddd;
+  }
+  .footerlinks_1:nth-child(1) {
+    padding:30px 10px 30px 40px;
+  }
+  .footerlinks_1 a{
+    text-decoration:none;
+  }
+  .footerlinks_1 a:hover,.footerlinks_1 a:active{
+    text-decoration:underline;
+    color:#FFF4A3;
+  }
+  .footerlinks_1 a:hover,.footerlinks_1 a:active{
+    text-decoration:underline;
+    color:#FFF4A3!;
+  }
+  .footerlinks_1 a:hover i{
+    color:#FFF4A3!important;
+  }
+  
+  .footerlinks_2 {
+    width:auto;
+    float:left;
+    padding-left:40px;
+    padding-right:140px;  
+    color:#ddd;
+    font-family: Source Sans Pro, sans-serif;
+    font-size:12px;
+    line-height:15px;
+  }
+  .footerlinks_2:nth-child(4) {
+    padding-right:0;
+  }
+  
+  .footerlinks_2 h5 {
+    margin-bottom:20px;
+  }
+  .footerlinks_2 a:visited,.footerlinks_2 a:link{
+    text-decoration:none;
+  }
+  .footerlinks_2 a:hover,.footerlinks_2 a:active{
+    color:#FFF4A3;
+  }
+  .footersome {
+    padding:60px 40px 10px 40px;
+    color:#ddd;
+    font-size:20px;
+  }
+  .footersome a {
+    margin-right:10px;
+  }
+  .footersome a:hover,.footersome a:active{
+    color:#FFF4A3;
+  }
+  .footersome .textlink {
+    font-size:15px;
+    text-decoration:none;
+  }
+  .footersome .textlink:active,.footersome .textlink:hover {
+    text-decoration:underline;
+  }
+  .footertext {
+    padding-left:40px;
+    color:#ddd;
+    font-size:12px;
+    line-height:15px;
+    
+  }
+  .footertext a:hover,.footertext a:active{
+    color:#FFF4A3;
+  }
+  
+
+@media screen and (max-width: 800px) {
+    .footerlinks_1 {
+      padding-left:4%;  
+      padding-right:3%;      
+    }
+    .footerlinks_1:nth-child(1) {
+      width:100%;
+      padding-left:0;
+    }
+    .footerlinks_1:nth-child(2) {
+      padding-left:0;
+    }
+    .footerlinks_2 {
+        padding-right:2%;  
+    }
+    .footerlinks_2:nth-child(1) {
+        padding-left:0;
+    }
+    .footerlinks_2:nth-child(4) {
+        padding-right:0;
+    }
+    .footertext {
+        padding-left:0;
+    }
+    .footersome {
+        padding-left:0;    
+    }
+    .footer-hide-special {
+        display:none;
+    }
+
+    #footerwrapper {
+        background-image:url('images/lynx_landing.png'), url('images/background_in_space.gif');
+        background-repeat: no-repeat, repeat;
+        background-position: center bottom, left top;
+    }
+}
+
 footer {
     text-align: center;
-    margin-top: 1em;
     font-size: 0.8rem;
     color: #666;
     background-color: #333;
@@ -180,6 +332,8 @@ footer {
     padding-top: 1em;
     padding-bottom: 3em;
 }
+
+
  /* 添加按钮组样式 */
  .btn-group {
     display: flex;

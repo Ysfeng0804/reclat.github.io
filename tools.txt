@@ -1,1 +1,7 @@
 icon使用font-awesome来定位
+
+
+如何获取html元素的css文件
+通过inspect右键功能
+
+overflow: hidden 如果溢出去，那就隐藏
