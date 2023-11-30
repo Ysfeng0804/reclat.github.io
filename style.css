@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-transition: all 0.3s ease;
 }
 
 
@@ -68,7 +67,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative; // Add position relative to header
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,12 +138,7 @@ main > section {
     font-weight: bold;
 }
 
-.custom-design-container {
-    margin: 0 auto; 
-}
-
 .custom-design-text {
-    display: flex;
     flex-direction: column;
 }
 
@@ -395,7 +389,7 @@ footer {
     }
     
     .nav-icon.active nav {
-        max-height: 250px; // Expand the navigation
+        max-height: 250px; 
     }
 
     #nav-icon img {
