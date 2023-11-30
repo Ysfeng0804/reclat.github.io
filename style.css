@@ -383,14 +383,6 @@ footer {
     align-items: center;
 }
 
-#mission img {
-    height: auto;
-}
-
-#mission div {
-    flex-grow: 1;
-}
-
 /* 在大屏幕下，隐藏menu icon */
 @media (min-width: 800px) {
     #nav-icon {
