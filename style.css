@@ -36,6 +36,15 @@ h5{
     font-size: 18px;
 }
 
+/*
+div {
+    display: inline;
+}
+
+#custom-design div{
+    display: block;
+}
+*/
 
 .container {
     max-width: 1280px;
@@ -100,8 +109,6 @@ main {
 main > section {
     margin-bottom: 2em;
 }
-
-
 
 .gallery {
     display: flex;
@@ -183,7 +190,6 @@ ol{
   #spacemyfooter {
     padding:40px 80px 300px 80px;
     max-width:1400px;
-    xmargin:auto;
   }
 
 .ga-bottom{
@@ -278,45 +284,6 @@ ol{
   .footertext a:hover,.footertext a:active{
     color:#FFF4A3;
   }
-  
-
-@media screen and (max-width: 800px) {
-    .footerlinks_1 {
-      padding-left:4%;  
-      padding-right:3%;      
-    }
-    .footerlinks_1:nth-child(1) {
-      width:100%;
-      padding-left:0;
-    }
-    .footerlinks_1:nth-child(2) {
-      padding-left:0;
-    }
-    .footerlinks_2 {
-        padding-right:2%;  
-    }
-    .footerlinks_2:nth-child(1) {
-        padding-left:0;
-    }
-    .footerlinks_2:nth-child(4) {
-        padding-right:0;
-    }
-    .footertext {
-        padding-left:0;
-    }
-    .footersome {
-        padding-left:0;    
-    }
-    .footer-hide-special {
-        display:none;
-    }
-
-    #footerwrapper {
-        background-image:url('images/lynx_landing.png'), url('images/background_in_space.gif');
-        background-repeat: no-repeat, repeat;
-        background-position: center bottom, left top;
-    }
-}
 
 footer {
     text-align: center;
@@ -439,5 +406,24 @@ footer {
     .gallery {
         flex-direction: column;
         align-items: center;
+    }
+   
+    #footerwrapper {
+        background-image:url('images/lynx_landing.png'), url('images/background_in_space.gif');
+        background-repeat: no-repeat, repeat;
+        background-position: center bottom, left top;
+        background-size: 500px, auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 1700px;
+    }
+
+    #footerwrapper .footerlinks_2 {
+        float: none;
+        margin: 40px 0;
+        padding: 0;
+        text-align: center;
     }
 }
