@@ -175,12 +175,6 @@ ol{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* button group to do */
-/*
-ga-bottom
-fa
-*/
-
 #footerwrapper {
     background-image:url('images/lynx_landing.png'), url('images/background_in_space.gif');
     background-repeat: no-repeat, repeat;
@@ -262,6 +256,7 @@ fa
   }
   .footersome a {
     margin-right:10px;
+    color:#ddd;
   }
   .footersome a:hover,.footersome a:active{
     color:#FFF4A3;
