@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='robots' content='max-image-preview:large' />
+
     <title>R'eclat</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    
+    <!-- 用于DNS预获取, 
+        当浏览器遇到这些标签时，它会尝试提前解析指定的域名，以减少DNS解析时间。
+        当浏览器实际请求这些域名上的资源时，由于已经解析过了，可以更快地加载内容。-->
+    <link rel='dns-prefetch' href='//use.typekit.net' /> <!--Adobe的Typekit字体服务，提供网页字体。-->
+    <link rel='dns-prefetch' href='//code.jquery.com' />
+    <link rel='dns-prefetch' href='//js.hs-scripts.com' /><!--HubSpot脚本，用于网站分析、营销自动化等-->
+    <link rel='dns-prefetch' href='//js.stripe.com' /> <!--Stripe支付处理服务的JavaScript库。-->
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' /><!--Google Tag Manager，用于管理和跟踪网站上的各种标签-->
+    <link rel='dns-prefetch' href='//connect.facebook.net' /><!--Facebook Connect，用于实现Facebook登录和分享等功能-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -175,14 +188,89 @@
         </section>
     </main>
 
-    <footer>
-        <!-- 添加带图标的按钮组 -->
-        <div class="btn-group">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <div id="footerwrapper">
+        <div style="overflow:hidden;">
+            <div class="footerlinks_2">
+            <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top Tutorials</h5>
+            <a href="/html/default.asp" class="ga-bottom">HTML Tutorial</a><br>
+            <a href="/css/default.asp" class="ga-bottom">CSS Tutorial</a><br>
+            <a href="/js/default.asp" class="ga-bottom">JavaScript Tutorial</a><br>
+            <a href="/howto/default.asp" class="ga-bottom">How To Tutorial</a><br>
+            <a href="/sql/default.asp" class="ga-bottom">SQL Tutorial</a><br>
+            <a href="/python/default.asp" class="ga-bottom">Python Tutorial</a><br>
+            <a href="/w3css/default.asp" class="ga-bottom">W3.CSS Tutorial</a><br>
+            <a href="/bootstrap/bootstrap_ver.asp" class="ga-bottom">Bootstrap Tutorial</a><br>
+            <a href="/php/default.asp" class="ga-bottom">PHP Tutorial</a><br>
+            <a href="/java/default.asp" class="ga-bottom">Java Tutorial</a><br>
+            <a href="/cpp/default.asp" class="ga-bottom">C++ Tutorial</a><br>
+            <a href="/jquery/default.asp" class="ga-bottom">jQuery Tutorial</a><br>
+            </div>
+
+            <div class="footerlinks_2">
+            <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
+            <a href="/tags/default.asp" class="ga-bottom">HTML Reference</a><br>
+            <a href="/cssref/index.php" class="ga-bottom">CSS Reference</a><br>
+            <a href="/jsref/default.asp" class="ga-bottom">JavaScript Reference</a><br>
+            <a href="/sql/sql_ref_keywords.asp" class="ga-bottom">SQL Reference</a><br>
+            <a href="/python/python_reference.asp" class="ga-bottom">Python Reference</a><br>
+            <a href="/w3css/w3css_references.asp" class="ga-bottom">W3.CSS Reference</a><br>
+            <a href="/bootstrap/bootstrap_ref_all_classes.asp" class="ga-bottom">Bootstrap Reference</a><br>
+            <a href="/php/php_ref_overview.asp" class="ga-bottom">PHP Reference</a><br>
+            <a href="/colors/colors_names.asp" class="ga-bottom">HTML Colors</a><br>
+            <a href="/java/java_ref_keywords.asp" class="ga-bottom">Java Reference</a><br>
+            <a href="/angular/angular_ref_directives.asp" class="ga-bottom">Angular Reference</a><br>
+            <a href="/jquery/jquery_ref_overview.asp" class="ga-bottom">jQuery Reference</a><br>
+            </div>
+
+            <div class="footerlinks_2">
+            <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top Examples</h5>
+            <a href="/html/html_examples.asp" class="ga-bottom">HTML Examples</a><br>
+            <a href="/css/css_examples.asp" class="ga-bottom">CSS Examples</a><br>
+            <a href="/js/js_examples.asp" class="ga-bottom">JavaScript Examples</a><br>
+            <a href="/howto/default.asp" class="ga-bottom">How To Examples</a><br>
+            <a href="/sql/sql_examples.asp" class="ga-bottom">SQL Examples</a><br>
+            <a href="/python/python_examples.asp" class="ga-bottom">Python Examples</a><br>
+            <a href="/w3css/w3css_examples.asp" class="ga-bottom">W3.CSS Examples</a><br>
+            <a href="/bootstrap/bootstrap_examples.asp" class="ga-bottom">Bootstrap Examples</a><br>
+            <a href="/php/php_examples.asp" class="ga-bottom">PHP Examples</a><br>
+            <a href="/java/java_examples.asp" class="ga-bottom">Java Examples</a><br>
+            <a href="/xml/xml_examples.asp" class="ga-bottom">XML Examples</a><br>
+            <a href="/jquery/jquery_examples.asp" class="ga-bottom">jQuery Examples</a><br>
+            </div>
+
+            <div class="footerlinks_2">
+            <a href="https://campus.w3schools.com/collections/course-catalog" target="_blank" class="ga-bottom"><h5 style="font-family: 'Source Sans Pro', sans-serif;">Get Certified</h5></a>
+            <a href="https://campus.w3schools.com/collections/certifications/products/html-certificate" target="_blank" class="ga-bottom">HTML Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/css-certificate" target="_blank" class="ga-bottom">CSS Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/javascript-certificate" target="_blank" class="ga-bottom">JavaScript Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/front-end-certificate" target="_blank" class="ga-bottom">Front End Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate" target="_blank" class="ga-bottom">SQL Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/python-certificate" target="_blank" class="ga-bottom">Python Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/php-certificate" target="_blank" class="ga-bottom">PHP Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/jquery-certificate" target="_blank" class="ga-bottom">jQuery Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/java-certificate" target="_blank" class="ga-bottom">Java Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate" target="_blank" class="ga-bottom">C++ Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate-1" target="_blank" class="ga-bottom">C# Certificate</a><br>
+            <a href="https://campus.w3schools.com/collections/certifications/products/xml-certificate" target="_blank" class="ga-bottom">XML Certificate</a><br>
+            </div>
         </div>
-        &copy; R'eclat, 2023. All Rights Reserved.
-    </footer>
+                
+        <div class="footersome">
+          <a target="_blank" href="https://www.facebook.com/w3schoolscom/" title="W3Schools on Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a target="_blank" href="https://discord.gg/6Z7UaRbUQM" title="Join the W3schools community on Discord"><i class="fab fa-discord"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/w3schools.com/" title="W3Schools on LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a target="_blank" href="https://www.instagram.com/w3schools.com_official/" title="W3Schools on Instagram"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" href="/forum/default.asp" title="Forum" class="textlink">FORUM</a>
+          <a target="_blank" href="/about/default.asp" title="About W3Schools" class="textlink">ABOUT</a>  
+        </div>
+        
+        <div class="footertext">
+            W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.<br class="footer-hide-special">
+            Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness<br class="footer-hide-special">
+            of all content. While using W3Schools, you agree to have read and accepted our <a href="/about/about_copyright.asp" class="ga-bottom">terms of use</a>, 
+            <a href="/about/about_privacy.asp" class="ga-bottom">cookie and privacy policy</a>.<br><br>
+            <a href="/about/about_copyright.asp" class="ga-bottom">Copyright 2023</a> by R'eclat. All Rights Reserved.
+        </div>
+    </div> 
 </body>
 </html>
